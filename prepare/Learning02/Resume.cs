@@ -1,15 +1,15 @@
 public class Resume
 {
-    public string _name = "";
-    public List<Job> _jobs = new List<Job>();
+    public string _zwName;
+    public List<Job> _zwJobs = new List<Job>();
 
-    public void DisplayResume()
+    public void zwDisplayResume()
     {
-        Console.WriteLine($"Name: {this._name} \nJobs:");
+        Console.WriteLine($"Name: {this._zwName}\nJobs:");
 
-        foreach (Job job in _jobs)
+        foreach (Job zwJob in _zwJobs)
         {
-            job.Display();
+            zwJob.zwDisplayJob();
         }
     }
 }
